@@ -1,0 +1,155 @@
+body {
+  font-family: "PT Serif", serif;
+}
+
+.footer {
+  min-height: auto;
+}
+
+.nav-item a {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.nav-item a:hover {
+  color: rgb(22, 58, 101) !important;
+}
+
+.dropdown-menu,
+.dropdown-menu li a:hover {
+  background-color: white;
+}
+
+.dropdown-menu li a {
+  color: black;
+}
+
+.dropdown-menu hr {
+  background-color: white;
+}
+
+.navbar-brand img {
+  max-width: 150px;
+}
+
+.collapse ul li a,
+footer .nav-item a {
+  position: relative;
+}
+
+.collapse ul li a:after,
+footer .nav-item a:after {
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: rgb(22, 58, 101);
+  transition: 0.3s ease 0s;
+  width: 0;
+}
+
+.collapse ul li a:hover:after,
+footer .nav-item a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.jumbotron {
+  margin-top: 120px;
+}
+
+.carousel {
+  margin-top: 99px;
+  height: 650px;
+}
+
+.header{
+  height: 650px;
+  background-image: url(../image/background2.jpg);
+  background-size: cover;
+  background-color: gray;
+}
+
+.home-about:before {
+  --circle-size: 600px;
+  --circle-border: 65px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -25%;
+  width: var(--circle-size);
+  height: var(--circle-size);
+  border: var(--circle-border) solid #dce1e7;
+  border-radius: 9999px;
+  z-index: -1;
+}
+
+.title-section {
+  --line-width: 125px;
+  --line-gutter: 8px;
+  position: relative;
+  padding-bottom: calc(var(--line-gutter) + 4px);
+  font-family: 'Poppins', sans-serif;
+  color: rgb(22, 58, 101);
+}
+
+.title-section.text-center:before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.title-section:before {
+  content: "";
+  position: absolute;
+  width: 125px;
+  height: 8px;
+  background-color: #eb5757;
+  bottom: 0;
+  left: 0;
+  border-radius: 9999px;
+}
+
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+.ratio-1x1 {
+  --rz-aspect-ratio: 100%;
+}
+
+.ratio {
+  position: relative;
+  width: 100%;
+}
+
+@media (max-width: 987px) {
+  .navbar-brand img {
+    max-width: 200px;
+  }
+
+  .pengertian img {
+    margin-bottom: 55px;
+  }
+
+  .pengertian p {
+    text-align: center !important;
+  }
+
+  .col p {
+    margin-bottom: 20px !important;
+  }
+}
+
+/* Desktop Version */
+
+/* @media (min-width: 992px){
+    .navbar-brand img{
+        width: 300px;
+        height: 100px;
+    }
+} */
